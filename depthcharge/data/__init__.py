@@ -1,14 +1,9 @@
-"""The Pytorch Datasets."""
+"""The Pytorch Datasets"""
 from . import preprocessing
-from .arrow import (
-    spectra_to_df,
-    spectra_to_parquet,
-    spectra_to_stream,
-)
-from .fields import CustomField
-from .peptide_datasets import PeptideDataset
-from .spectrum_datasets import (
-    AnnotatedSpectrumDataset,
+
+from .datasets import (
     SpectrumDataset,
-    StreamingSpectrumDataset,
+    AnnotatedSpectrumDataset,
 )
+
+from .hdf5 import SpectrumIndex, AnnotatedSpectrumIndex

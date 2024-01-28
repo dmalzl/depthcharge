@@ -1,0 +1,249 @@
+calculate_precision: false
+dim_feedforward: 1024
+dim_intensity: null
+dim_model: 512
+dropout: 0.0
+isotope_error_range: !!python/tuple
+- 0
+- 1
+lr: 0.0005
+max_charge: 10
+max_iters: 600000
+max_length: 100
+min_peptide_len: 6
+n_beams: 1
+n_head: 8
+n_layers: 9
+n_log: 1
+out_writer: !!python/object:casanovo.data.ms_io.MztabWriter
+  _run_map: {}
+  filename: !!python/object/apply:pathlib.PosixPath
+  - /
+  - lisc
+  - user
+  - trinh
+  - .conda
+  - envs
+  - casanovo_env
+  - lib
+  - python3.10
+  - site-packages
+  - depthcharge
+  - data
+  - casanovo_20240104151539.mztab
+  metadata:
+  - !!python/tuple
+    - mzTab-version
+    - 1.0.0
+  - !!python/tuple
+    - mzTab-mode
+    - Summary
+  - !!python/tuple
+    - mzTab-type
+    - Identification
+  - !!python/tuple
+    - description
+    - Casanovo identification file casanovo_20240104151539
+  - !!python/tuple
+    - software[1]
+    - '[MS, MS:1003281, Casanovo, 4.0.1]'
+  - !!python/tuple
+    - psm_search_engine_score[1]
+    - '[MS, MS:1001143, search engine specific score for PSMs, ]'
+  - !!python/tuple
+    - fixed_mod[1]
+    - '[UNIMOD, UNIMOD:4, Carbamidomethyl, ]'
+  - !!python/tuple
+    - fixed_mod[1]-site
+    - C
+  - !!python/tuple
+    - variable_mod[1]
+    - '[UNIMOD, UNIMOD:7, Deamidated, ]'
+  - !!python/tuple
+    - variable_mod[1]-site
+    - N
+  - !!python/tuple
+    - variable_mod[2]
+    - '[UNIMOD, UNIMOD:7, Deamidated, ]'
+  - !!python/tuple
+    - variable_mod[2]-site
+    - Q
+  - !!python/tuple
+    - variable_mod[3]
+    - '[UNIMOD, UNIMOD:35, Oxidation, ]'
+  - !!python/tuple
+    - variable_mod[3]-site
+    - M
+  - !!python/tuple
+    - variable_mod[4]
+    - '[UNIMOD, UNIMOD:1, Acetyl, ]'
+  - !!python/tuple
+    - variable_mod[4]-site
+    - N-term
+  - !!python/tuple
+    - variable_mod[5]
+    - '[UNIMOD, UNIMOD:5, Carbamyl, ]'
+  - !!python/tuple
+    - variable_mod[5]-site
+    - N-term
+  - !!python/tuple
+    - variable_mod[6]
+    - '[UNIMOD, UNIMOD:385, Ammonia-loss, ]'
+  - !!python/tuple
+    - variable_mod[6]-site
+    - N-term
+  - !!python/tuple
+    - software[1]-setting[1]
+    - model = /lisc/user/trinh/.cache/casanovo/casanovo_massivekb_v4_0_0.ckpt
+  - !!python/tuple
+    - software[1]-setting[2]
+    - config_filename = default
+  - !!python/tuple
+    - software[1]-setting[3]
+    - precursor_mass_tol = 50.0
+  - !!python/tuple
+    - software[1]-setting[4]
+    - isotope_error_range = (0, 1)
+  - !!python/tuple
+    - software[1]-setting[5]
+    - min_peptide_len = 6
+  - !!python/tuple
+    - software[1]-setting[6]
+    - predict_batch_size = 1024
+  - !!python/tuple
+    - software[1]-setting[7]
+    - n_beams = 1
+  - !!python/tuple
+    - software[1]-setting[8]
+    - top_match = 1
+  - !!python/tuple
+    - software[1]-setting[9]
+    - accelerator = auto
+  - !!python/tuple
+    - software[1]-setting[10]
+    - devices = None
+  - !!python/tuple
+    - software[1]-setting[11]
+    - random_seed = 454
+  - !!python/tuple
+    - software[1]-setting[12]
+    - n_log = 1
+  - !!python/tuple
+    - software[1]-setting[13]
+    - tb_summarywriter = None
+  - !!python/tuple
+    - software[1]-setting[14]
+    - save_top_k = 5
+  - !!python/tuple
+    - software[1]-setting[15]
+    - 'model_save_folder_path = '
+  - !!python/tuple
+    - software[1]-setting[16]
+    - val_check_interval = 50000
+  - !!python/tuple
+    - software[1]-setting[17]
+    - n_peaks = 150
+  - !!python/tuple
+    - software[1]-setting[18]
+    - min_mz = 50.0
+  - !!python/tuple
+    - software[1]-setting[19]
+    - max_mz = 2500.0
+  - !!python/tuple
+    - software[1]-setting[20]
+    - min_intensity = 0.01
+  - !!python/tuple
+    - software[1]-setting[21]
+    - remove_precursor_tol = 2.0
+  - !!python/tuple
+    - software[1]-setting[22]
+    - max_charge = 10
+  - !!python/tuple
+    - software[1]-setting[23]
+    - dim_model = 512
+  - !!python/tuple
+    - software[1]-setting[24]
+    - n_head = 8
+  - !!python/tuple
+    - software[1]-setting[25]
+    - dim_feedforward = 1024
+  - !!python/tuple
+    - software[1]-setting[26]
+    - n_layers = 9
+  - !!python/tuple
+    - software[1]-setting[27]
+    - dropout = 0.0
+  - !!python/tuple
+    - software[1]-setting[28]
+    - dim_intensity = None
+  - !!python/tuple
+    - software[1]-setting[29]
+    - max_length = 100
+  - !!python/tuple
+    - software[1]-setting[30]
+    - warmup_iters = 100000
+  - !!python/tuple
+    - software[1]-setting[31]
+    - max_iters = 600000
+  - !!python/tuple
+    - software[1]-setting[32]
+    - learning_rate = 0.0005
+  - !!python/tuple
+    - software[1]-setting[33]
+    - weight_decay = 1e-05
+  - !!python/tuple
+    - software[1]-setting[34]
+    - train_label_smoothing = 0.01
+  - !!python/tuple
+    - software[1]-setting[35]
+    - train_batch_size = 32
+  - !!python/tuple
+    - software[1]-setting[36]
+    - max_epochs = 30
+  - !!python/tuple
+    - software[1]-setting[37]
+    - num_sanity_val_steps = 0
+  - !!python/tuple
+    - software[1]-setting[38]
+    - train_from_scratch = True
+  - !!python/tuple
+    - software[1]-setting[39]
+    - calculate_precision = False
+  - !!python/tuple
+    - software[1]-setting[41]
+    - n_workers = 128
+  psms: []
+precursor_mass_tol: 50.0
+residues:
+  '+42.011': 42.010565
+  '+43.006': 43.005814
+  +43.006-17.027: 25.980265
+  '-17.027': -17.026549
+  A: 71.037114
+  C+57.021: 160.030649
+  D: 115.026943
+  E: 129.042593
+  F: 147.068414
+  G: 57.021464
+  H: 137.058912
+  I: 113.084064
+  K: 128.094963
+  L: 113.084064
+  M: 131.040485
+  M+15.995: 147.0354
+  N: 114.042927
+  N+0.984: 115.026943
+  P: 97.052764
+  Q: 128.058578
+  Q+0.984: 129.042594
+  R: 156.101111
+  S: 87.032028
+  T: 101.04767
+  V: 99.068414
+  W: 186.079313
+  Y: 163.063329
+tb_summarywriter: null
+top_match: 1
+train_label_smoothing: 0.01
+warmup_iters: 100000
+weight_decay: 1.0e-05
